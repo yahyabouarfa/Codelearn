@@ -1,0 +1,166 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1765427948907,31,POST /api/auth/logout,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Logout Test - Users 3-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[200                                                                  ]]]
+
+/",2630,0,1,3,http://localhost:8081/api/auth/logout,0,0,30
+1765427948907,31,POST /api/auth/signup,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Signup Test - Users 1-1,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[200                                                                  ]]]
+
+/",2630,0,1,3,http://localhost:8081/api/auth/signup,0,0,30
+1765427948907,31,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-1,text,false,Test failed: text expected to contain /token/,2630,0,1,3,http://localhost:8081/api/auth/login,0,0,30
+1765427948982,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-1,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427948986,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-1,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427949200,2,POST /api/auth/logout,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Logout Test - Users 3-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[200                                                                  ]]]
+
+/",2630,0,1,1,http://localhost:8081/api/auth/logout,0,0,2
+1765427949278,2,POST /api/auth/signup,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Signup Test - Users 1-2,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[200                                                                  ]]]
+
+/",2630,0,1,1,http://localhost:8081/api/auth/signup,0,0,2
+1765427949289,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-2,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427949293,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-2,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427949296,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-2,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427949601,1,POST /api/auth/logout,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Logout Test - Users 3-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[200                                                                  ]]]
+
+/",2630,0,1,1,http://localhost:8081/api/auth/logout,0,0,1
+1765427949781,2,POST /api/auth/signup,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Signup Test - Users 1-3,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[200                                                                  ]]]
+
+/",2630,0,1,1,http://localhost:8081/api/auth/signup,0,0,2
+1765427949789,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-3,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427949792,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-3,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427949795,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-3,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427949999,1,POST /api/auth/logout,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Logout Test - Users 3-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[200                                                                  ]]]
+
+/",2630,0,1,1,http://localhost:8081/api/auth/logout,0,0,1
+1765427950278,2,POST /api/auth/signup,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Signup Test - Users 1-4,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[200                                                                  ]]]
+
+/",2630,0,1,1,http://localhost:8081/api/auth/signup,0,0,2
+1765427950289,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-4,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427950292,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-4,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427950294,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-4,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427950399,1,POST /api/auth/logout,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Logout Test - Users 3-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[200                                                                  ]]]
+
+/",2630,0,1,1,http://localhost:8081/api/auth/logout,0,0,1
+1765427950778,2,POST /api/auth/signup,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Signup Test - Users 1-5,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[200                                                                  ]]]
+
+/",2630,0,1,1,http://localhost:8081/api/auth/signup,0,0,2
+1765427950789,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-5,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427950791,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-5,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427950792,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-5,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427951275,2,POST /api/auth/signup,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Signup Test - Users 1-6,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[200                                                                  ]]]
+
+/",2630,0,1,1,http://localhost:8081/api/auth/signup,0,0,2
+1765427951288,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-6,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427951290,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-6,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427951292,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-6,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427951775,1,POST /api/auth/signup,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Signup Test - Users 1-7,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[200                                                                  ]]]
+
+/",2630,0,1,1,http://localhost:8081/api/auth/signup,0,0,1
+1765427951788,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-7,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427951790,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-7,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427951793,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-7,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427952276,2,POST /api/auth/signup,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Signup Test - Users 1-8,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[200                                                                  ]]]
+
+/",2630,0,1,1,http://localhost:8081/api/auth/signup,0,0,2
+1765427952288,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-8,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427952291,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-8,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427952294,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-8,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427952775,2,POST /api/auth/signup,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Signup Test - Users 1-9,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[200                                                                  ]]]
+
+/",2630,0,1,1,http://localhost:8081/api/auth/signup,0,0,2
+1765427952788,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-9,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427952791,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-9,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427952795,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-9,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427953279,1,POST /api/auth/signup,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Signup Test - Users 1-10,text,false,"Test failed: code expected to equal /
+
+****** received  : [[[Non HTTP response code: org.apache.http.conn.HttpHostConnectException]]]
+
+****** comparison: [[[200                                                                  ]]]
+
+/",2630,0,1,1,http://localhost:8081/api/auth/signup,0,0,1
+1765427953287,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-10,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427953290,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-10,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427953294,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-10,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427953791,3,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-11,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,3
+1765427953797,3,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-11,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427953801,3,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-11,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,3
+1765427954290,5,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-12,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,5
+1765427954296,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-12,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427954299,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-12,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427954789,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-13,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427954792,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-13,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427954794,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-13,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427955288,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-14,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427955291,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-14,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427955293,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-14,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427955789,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-15,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427955792,3,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-15,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,3
+1765427955796,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-15,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427956291,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-16,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427956294,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-16,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427956296,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-16,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427956789,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-17,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427956791,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-17,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427956793,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-17,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427957288,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-18,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427957290,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-18,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427957291,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-18,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427957790,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-19,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427957793,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-19,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1
+1765427957795,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-19,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427958290,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-20,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427958293,2,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-20,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,2
+1765427958295,1,POST /api/auth/login,Non HTTP response code: org.apache.http.conn.HttpHostConnectException,"Non HTTP response message: Connect to localhost:8081 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect",Login Test - Users 2-20,text,false,Test failed: text expected to contain /token/,2630,0,1,1,http://localhost:8081/api/auth/login,0,0,1

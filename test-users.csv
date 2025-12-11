@@ -1,0 +1,12 @@
+email,motDePasse,nom,prenom,role
+student1@test.com,Test@123456,Dupont,Jean,STUDENT
+student2@test.com,Test@123456,Martin,Marie,STUDENT
+student3@test.com,Test@123456,Bernard,Pierre,STUDENT
+student4@test.com,Test@123456,Dubois,Sophie,STUDENT
+student5@test.com,Test@123456,Thomas,Lucas,STUDENT
+teacher1@test.com,Test@123456,Moreau,Claire,TEACHER
+teacher2@test.com,Test@123456,Laurent,Michel,TEACHER
+admin1@test.com,Test@123456,Simon,Admin,ADMIN
+student6@test.com,Test@123456,Petit,Emma,STUDENT
+student7@test.com,Test@123456,Roux,Hugo,STUDENT
+
