@@ -1,0 +1,114 @@
+╔═══════════════════════════════════════════════════════════════════════╗
+║                    🚀 QUICK START REFERENCE CARD                      ║
+╚═══════════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ ✅ CLOUDINARY CONFIGURÉ                                              │
+├─────────────────────────────────────────────────────────────────────┤
+│ Cloud Name: drrjw2e3h                                               │
+│ API Key:    952467319343213                                         │
+│ Status:     ✅ ACTIF ET PRÊT                                         │
+└─────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────┐
+│ ✅ CORS ACTIVÉ                                                       │
+├─────────────────────────────────────────────────────────────────────┤
+│ Tous les frontends peuvent accéder à l'API                         │
+│ ✓ React/Next.js    ✓ Angular    ✓ Vue/Nuxt                         │
+│ ✓ Localhost        ✓ Production  ✓ Mobile Apps                     │
+└─────────────────────────────────────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 DÉMARRAGE RAPIDE
+
+1. Démarrer le backend:
+   > start.bat
+   OU
+   > ./mvnw spring-boot:run
+
+2. Backend disponible sur:
+   → http://localhost:8084
+
+3. Tester depuis votre frontend:
+   → fetch('http://localhost:8084/api/cours/liste')
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📡 API ENDPOINTS
+
+┌─────────────┬──────────────────────────────────┬─────────────────┐
+│ Method      │ Endpoint                         │ Description     │
+├─────────────┼──────────────────────────────────┼─────────────────┤
+│ GET         │ /api/cours/liste                 │ Liste cours     │
+│ POST        │ /api/cours/publier/{id}          │ Créer cours     │
+│ PUT         │ /api/cours/modifier/{id}         │ Modifier cours  │
+│ POST        │ /api/cours/{id}/supports         │ Add support URL │
+│ POST        │ /api/cours/{id}/supports/upload  │ Upload fichier  │
+└─────────────┴──────────────────────────────────┴─────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💻 EXEMPLES FRONTEND
+
+React/Next.js:
+───────────────
+fetch('http://localhost:8084/api/cours/liste')
+  .then(r => r.json())
+  .then(data => console.log(data));
+
+Angular:
+────────
+this.http.get('http://localhost:8084/api/cours/liste')
+  .subscribe(data => console.log(data));
+
+Vue/Nuxt:
+─────────
+axios.get('http://localhost:8084/api/cours/liste')
+  .then(r => console.log(r.data));
+
+Upload Fichier:
+───────────────
+const formData = new FormData();
+formData.append('file', file);
+formData.append('typeSupport', 'PDF');
+
+fetch('http://localhost:8084/api/cours/1/supports/upload', {
+  method: 'POST',
+  body: formData
+});
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 DOCUMENTATION
+
+CORS_CONFIGURATION.md       → Guide CORS complet
+SETUP_GUIDE.md             → Guide d'installation
+MODIFICATIONS_SUMMARY.md   → Résumé technique
+CHECKLIST.md               → Liste de vérification
+*.postman_collection.json  → Tests API Postman
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ FONCTIONNALITÉS ACTIVES
+
+✅ Upload fichiers vers Cloudinary
+✅ CORS tous frontends
+✅ valide_par_admin = false (auto)
+✅ Dates création/modification (auto)
+✅ API REST complète
+✅ PostgreSQL (Neon)
+✅ Spring Security
+✅ File upload (50MB max)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎊 PROJET 100% OPÉRATIONNEL!
+
+Backend:  ✅ PRÊT
+Frontend: ✅ PEUT SE CONNECTER
+Upload:   ✅ CLOUDINARY ACTIF
+CORS:     ✅ TOUS DOMAINES AUTORISÉS
+
+🚀 BON DÉVELOPPEMENT!
+
