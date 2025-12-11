@@ -1,0 +1,126 @@
+version: '3.8'
+
+services:
+  # User Service (Authentication & User Management)
+  user-service:
+    image: codelearn/user-service:latest
+    container_name: codelearn-user-service
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/codelearn_users
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+      - JWT_SECRET=your-secret-key-change-in-production
+      - JWT_EXPIRATION=86400000
+    depends_on:
+      - postgres
+    networks:
+      - codelearn-network
+    restart: unless-stopped
+
+  # Apprenant Service (Learner Features)
+  apprenant-service:
+    image: codelearn/apprenant-service:latest
+    container_name: codelearn-apprenant-service
+    ports:
+      - "8081:8081"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/codelearn_apprenant
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+      - USER_SERVICE_URL=http://user-service:8080
+    depends_on:
+      - postgres
+      - user-service
+    networks:
+      - codelearn-network
+    restart: unless-stopped
+
+  # Createur Service (Course Creator Features)
+  createur-service:
+    image: codelearn/createur-service:latest
+    container_name: codelearn-createur-service
+    ports:
+      - "8082:8082"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/codelearn_createur
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+      - USER_SERVICE_URL=http://user-service:8080
+      - FILE_UPLOAD_DIR=/app/uploads
+    depends_on:
+      - postgres
+      - user-service
+    volumes:
+      - course-uploads:/app/uploads
+    networks:
+      - codelearn-network
+    restart: unless-stopped
+
+  # Admin Service (Administration Features)
+  admin-service:
+    image: codelearn/admin-service:latest
+    container_name: codelearn-admin-service
+    ports:
+      - "8083:8083"
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/codelearn_admin
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+      - USER_SERVICE_URL=http://user-service:8080
+      - CREATEUR_SERVICE_URL=http://createur-service:8082
+    depends_on:
+      - postgres
+      - user-service
+      - createur-service
+    networks:
+      - codelearn-network
+    restart: unless-stopped
+
+  # Frontend React Application
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: codelearn-frontend
+    ports:
+      - "80:80"
+    environment:
+      - REACT_APP_USER_API=http://localhost:8080/api
+      - REACT_APP_APPRENANT_API=http://localhost:8081/api/apprenant
+      - REACT_APP_CREATEUR_API=http://localhost:8082/api/createur
+      - REACT_APP_ADMIN_API=http://localhost:8083/api/admin
+    depends_on:
+      - user-service
+      - apprenant-service
+      - createur-service
+      - admin-service
+    networks:
+      - codelearn-network
+    restart: unless-stopped
+
+  # PostgreSQL Database
+  postgres:
+    image: postgres:14-alpine
+    container_name: codelearn-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_MULTIPLE_DATABASES=codelearn_users,codelearn_apprenant,codelearn_createur,codelearn_admin
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./init-databases.sh:/docker-entrypoint-initdb.d/init-databases.sh
+    networks:
+      - codelearn-network
+    restart: unless-stopped
+
+networks:
+  codelearn-network:
+    driver: bridge
+
+volumes:
+  postgres-data:
+  course-uploads:
